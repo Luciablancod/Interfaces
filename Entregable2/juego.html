@@ -5,14 +5,369 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <script src="https://kit.fontawesome.com/f4f63da807.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Juego 4 en linea</title>
 </head>
 
-<body >
-    
-    <h2>Juego 4 en linea</h2>
-    
-</body>
+<body class="juego-4-en-linea">
 
+        <div id="contenedor-carga" class="contenedor-carga">
+            <div id="carga" class="carga">
+            </div>
+            
+            <div class="porcentaje">
+            <p id="porcentaje-carga">0%</p>
+            </div>
+        </div>
+
+        <header>
+            <div class="logo">
+                <a href="./index.html"> <img src="img/Logo.png" alt="logo"></a>
+            </div>
+
+            <nav role="navigation">
+                <div  id="menuToggle">
+                    <input type="checkbox" />
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+
+                    <div id="menu">
+                        <div class="header-menu">
+                            <img src="img/user-menu.png" alt="logo"></a>
+                            <h2>¡Hola Juan!</h2>
+                            <button><img src="./img/logoout.png" alt="logo">Cerrar sesión</button>
+                        </div>
+
+                        <ul>
+                            <a href="#"><li><img src="./img/User.png" alt="logo">Mi perfil</li></a>
+
+                            <a href="#"><li><img src="./img/novedades.png" alt="logo">Novedades</li></a>
+
+                            <a href="#"><li><img src="img/clasicos.png" alt="logo">Clásicos</li></a>
+
+                            <a href="#"><li><img src="img/aventura.png" alt="logo">Aventuras</li></a>
+
+                            <a href="#"><li><img src="img/habilidad.png" alt="logo">Habilidad</li></a>
+
+                            <a href="#"><li><img src="img/simulacion.png" alt="logo">Simulación</li></a>
+
+                        </ul>
+
+                        <div class="redes">
+                                
+                            <img src="img/Share.png" alt="logo">
+                            <img src="img/Instagram.png" alt="logo">
+                            <img src="img/TikTok.png" alt="logo">
+                            <img src="img/Twitter.png" alt="logo">
+                        
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        
+        <div class="container ">
+
+
+            <div class="breadcrum">
+                <h3><a href="./index.html">Home</a><span class="material-icons">chevron_right
+                </span> Clásicos<span class="material-icons">chevron_right</span> 4 en linea - Pirate Hunter</h3>
+            </div>
+            
+            <h1>4 en linea - Pirate Hunter</h1>
+
+            <div class="juego-content">
+
+                <section class="juego">
+
+                    <div class="img-juego"> 
+                    <img src="./img/4-en-linea.png" alt="Card image cap">
+                    </div>
+
+
+                    <div class="bottom-compartir">
+                        <h3><span class="material-icons">
+                            share
+                            </span>Compartir</h3>
+
+                    </div>
+
+                    <button class="btn-jugar">
+                        <a href="">Jugar <span class="material-icons">play_arrow</span></a>
+                    </button>
+
+                </section>
+
+                <section class="instrucciones">
+                    <h2>Participá en la Batalla</h2>
+
+                    <div class="instrucciones fichas">
+                        <div class="instruccion-ficha">
+                            <figure>
+                                <img src="./img/Ficha-calabera.png" alt="logo">
+                            </figure>
+
+                            <h3>Calabera</h3>
+
+                            <p>Elije ser pirata y tendrás la valentía y destreza para vencer.</p>
+                        </div>
+
+                        <h1>VS.</h1>
+
+                        <div class="instruccion-ficha">
+                            <figure>
+                                <img src="./img/Ficha-brujula.png" alt="logo">
+                            </figure>
+
+                            <h3>Brújula</h3>
+
+                            <p>Sé un explorador y consigue la astucia y poder para ganar.</p>
+                        </div>
+
+                        <div class="como-jugar">
+                            <h2>¿Como jugar?</h2>
+                            <p>Consiste en colocar cuatro fichas de tu bando elegido consecutivas,  puede ser en columna, fila o diagonal.</p>
+
+                            <ul>
+                                <li>Click izquierdo -> seleccionar ficha</li>
+                                <li>Arrastrar mouse -> mover ficha</li>
+                                <li>Soltar click izquierdo -> colocar ficha</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </section>
+            </div>
+
+            <section class="acerca-de">
+                <h1>Acerca de este juego</h1>
+                <p>En este clásico juego, adentrate en las profundidades de un mar asediado por bandos de grupos piratas y  de exploradores, dónde  se enfrentarán a disputar las riquezas que se se hallan pérdidas en el fondo del óceano.</p>
+            </section>
+
+            <section class="carrousel">
+                <h2>Galeria de imagenes y videos</h2>
+                <div class="carrousel-juegos snap-inline cuatro-en-linea">
+
+                    <div class="card-4-en-linea">
+                        <img class="card-img-top-cuadrado" src="./img/Juego (1).png" alt="Card image cap">
+                    </div>
+
+                    
+                    <div class="card-4-en-linea">
+                        <iframe width="400" height="209" src="https://www.youtube.com/embed/VgMjWuzDcf0?start=547" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="card-4-en-linea">
+                        <img class="card-img-top-cuadrado" src="./img/Juego.png" alt="Card image cap">
+                    </div>
+
+                    <div class="card-4-en-linea">
+                        <img class="card-img-top-cuadrado" src="./img/juego-galeria.png" alt="Card image cap">
+                    </div>
+                </div>
+            </section>
+
+            <section class="comentarios" >
+                <h1><span class="material-icons">
+                    chat_bubble
+                    </span>Comentarios</h1>
+
+                <form>
+                    <div  class="input-comentario">
+                        <div class="user-coment">
+                            <img src="./img/user-5.png">
+                            <h3>Tú</h3>
+                        </div>    
+                        <textarea rows="8" placeholder="¿Qué pensas de este juego?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+
+
+                <div class="comentario">
+                    <div  class="contenedor-comentario">
+                        <div class="user-coment">
+                            <img src="./img/user-2.png">
+                            <h4>whitefish664</h4>
+                        </div>    
+                        <p>Me gusta pero se podría mejora</p>
+                    </div>
+
+                    <div  class="contenedor-comentario">
+                        <div class="user-coment">
+                            <img src="./img/user-3.png">
+                            <h4>beautifulmouse112</h4>
+                        </div>    
+                        <p>Por supuesto el clásico juego que estar en playFun</p>
+                    </div>
+
+                    <div  class="contenedor-comentario">
+                        <div class="user-coment">
+                            <img src="./img/user-4.png">
+                            <h4>crazyelephant681</h4>
+                        </div>    
+                        <p>Me encanta este juego</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="carrousel">
+                <h1>Recomendados</h1>
+                <div class="carrousel-juegos snap-inline">
+
+
+
+                    <div class="card">
+                        <div class="card-container">
+                            <img class="card-img-top-cuadrado" src="./img/portada-zombs.webp" alt="Card image cap">
+                            
+                            <div class="card-body-cuadrado">
+                                <h5 class="card-title">Batalla de omnibolas</h5>
+                                <a href="#" class="btn btn-primary"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-container">
+                            <img class="card-img-top-cuadrado" src="./img/portada-fullboys.jpg" alt="Card image cap">
+                            <!-- <div class="card-img-top"></div> -->
+                            
+                            <div class="card-body-cuadrado">
+                                <h5 class="card-title">Batalla de omnibolas</h5>
+                                <a href="#" class="btn btn-primary"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-container">
+                            <img class="card-img-top-cuadrado" src="./img/portada-a-correr.jpg" alt="Card image cap">
+                            <!-- <div class="card-img-top"></div> -->
+                            
+                            <div class="card-body-cuadrado">
+                                <h5 class="card-title">Batalla de omnibolas</h5>
+                                <a href="#" class="btn btn-primary"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-container">
+                            <img class="card-img-top-cuadrado" src="./img/portada-lucha.jpg" alt="Card image cap">
+                            <!-- <div class="card-img-top"></div> -->
+                            
+                            <div class="card-body-cuadrado">
+                                <h5 class="card-title">Batalla de omnibolas</h5>
+                                <a href="#" class="btn btn-primary"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-container">
+                            <img class="card-img-top-cuadrado" src="./img/portada-zoo-boom.jpg" alt="Card image cap">
+                            <!-- <div class="card-img-top"></div> -->
+                            
+                            <div class="card-body-cuadrado">
+                                <h5 class="card-title">Batalla de omnibolas</h5>
+                                <a href="#" class="btn btn-primary"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-container">
+                            <img class="card-img-top-cuadrado" src="./img/portada-tho.jpg" alt="Card image cap">
+                            <!-- <div class="card-img-top"></div> -->
+                            
+                            <div class="card-body-cuadrado">
+                                <h5 class="card-title">Batalla de omnibolas</h5>
+                                <a href="#" class="btn btn-primary"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        <footer>
+            <div class="logo-footer">
+                <img src="img/Logo.png" alt="logo">
+            </div>
+
+            <div class="container-footer">
+                <section class="redes">
+                    <h4>Redes sociales</h4>
+                                
+                    <ul>
+                        <li><img src="img/Share.png" alt="logo"></li>
+                        <li><img src="img/Instagram.png" alt="logo"></li>
+                        <li><img src="img/TikTok.png" alt="logo"></li>
+                        <li><img src="img/Twitter.png" alt="logo"></li>
+                    
+                    </ul>
+                </section>
+
+            <section class="info-web">
+                <h4>¿Quienes somos?</h4>
+                <p>Play Fun! es una plataforma de juegos en línea. Fue fundada en 2013 por Raf Mertens y, desde entonces, la plataforma ha crecido hasta llegar a más de 15 millones de usuarios mensuales.
+                Tenemos un objetivo muy sencillo: crear una plataforma de juegos .
+                </p>
+            </section>
+
+            <section class="info-app">
+                <h4>¿Quienes somos?</h4>
+                <p>Play Fun! es una plataforma de juegos en línea. Fue fundada en 2013 por Raf Mertens.
+                </p>
+            </section>
+
+
+            <section class="ayuda">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li>Términos de uso</li>
+                    <li>Politicas de privacidad</li>
+                    <li>Información para padres</li>
+                    <li>Cookies</li>
+                    <li>Concentimiento de cookies</li>
+                </ul>
+            </section>
+
+
+            <section class="idiomas">
+                <h4>Idiomas</h4>
+                <ul>
+                    <li>English</li>
+                    <li>British Englis</li>
+                    <li>Deutsch</li>
+                    <li>Français</li>
+                    <li>Italiano</li>
+                    <li>Português</li>
+                </ul>
+            </section>
+                
+            <div class="copyright">
+            <h5>Copyright 2022  Todos los derechos reservados</h5>
+            </div>
+            </div>
+        </footer>
+
+    
+    <script src="./js/slider.js"></script>
+    <script src="./js/loading.js"></script>
+</body>
 </html>
