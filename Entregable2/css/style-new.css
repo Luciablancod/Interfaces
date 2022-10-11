@@ -32,20 +32,19 @@ body{
 }
 
 /*---------PRELOADER----------*/
+
+
 .contenedor-carga {
-    position: absolute;
-    /* display: block; */
     height: 100%;
-    width: 60%;
-    min-height: 250px; 
-    float: left;
+    width: 100%;
+    /* min-height: 250px; */
+    /* float: left; */
     z-index: 100;
-    overflow: hidden;
     background-color: rgb(7, 7, 7,0.9);
     position: fixed;
     transition: all 1s ease;
-
-    visibility: visible; 
+    overflow: hidden;
+    visibility: visible;
 }
 
 .contenedor-carga-hidden {
@@ -56,9 +55,9 @@ body{
 
 .contenedor-carga .carga {
     position: absolute;
-    top: 20%; left: 40%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 130px; height: 130px;
+    width: 200px; height: 200px;
     border-radius: 50%;
     border-top: 5px solid #ef4361;
     border-right: 5px solid #ef4361;
@@ -68,8 +67,8 @@ body{
 
 .contenedor-carga .porcentaje {
 position: absolute;
-top: 20%; left: 40%;
-font-size: 40px;
+top: 50%; left: 50%;
+font-size: 45px;
 font-weight: 700;
 color: #ef4361;
 z-index: 2;
@@ -1080,54 +1079,6 @@ text-shadow: 1px 1px 1px rgba(54,63,145, 0.4);
 
 
 @media only screen and (min-width: 768px) {
-
-    /*--------PRELOADER----------*/
-
-    .contenedor-carga {
-        height: 100%;
-        width: 100%;
-        /* min-height: 250px; */
-        /* float: left; */
-        z-index: 100;
-        background-color: rgb(7, 7, 7,0.9);
-        position: fixed;
-        transition: all 1s ease;
-        overflow: hidden;
-        visibility: visible;
-    }
-
-    .contenedor-carga-hidden {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        visibility: hidden;
-    }
-    
-    .contenedor-carga .carga {
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-        width: 200px; height: 200px;
-        border-radius: 50%;
-        border-top: 5px solid #ef4361;
-        border-right: 5px solid #ef4361;
-        animation: spin 3s infinite ease-out;
-        z-index: 2;
-    }
-
-    .contenedor-carga .porcentaje {
-    position: absolute;
-    top: 50%; left: 50%;
-    font-size: 45px;
-    font-weight: 700;
-    color: #ef4361;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-    }
-    
-    @keyframes spin {
-    0%   { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg)}
-    } 
 
 
 
