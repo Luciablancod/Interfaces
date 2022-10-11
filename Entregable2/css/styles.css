@@ -25,6 +25,7 @@
 
 .contenedor-carga {
     position: absolute;
+    /* display: block; */
     height: 100%;
     width: 60%;
     min-height: 250px; 
@@ -98,7 +99,7 @@ header .logo img{
     position: relative;
     -webkit-user-select: none;
     user-select: none;
-    }
+}
 
 #menuToggle input
 {
@@ -243,7 +244,7 @@ transform: none;
     align-items: center;
     justify-content: center;
 }
-    
+        
 .header-menu button > a {
     position: relative;
     overflow: hidden;
@@ -264,7 +265,7 @@ footer{
     margin-top: 4rem;
     background-color:#DC036D;
     color: #F2F2F2;
-    }
+}
 
 .container-footer{
     font-size: 12px;
@@ -295,7 +296,7 @@ width: 24px;
 
 
 .info-app {
-    padding-right: 30rem;
+    padding-right: 10rem;
     visibility: visible;
 }
 
@@ -323,7 +324,7 @@ body{
     background-color: #0D0D0D;
 }
 
-/*--------SROLL BAR----------*/
+/*Scroll bar style*/
 
 .carrousel-juegos::-webkit-scrollbar {
     height: 0.3rem;
@@ -346,7 +347,7 @@ body{
     height: 15rem;
     box-shadow: inset 1px -42px 32px 17px rgb(0 0 0 / 60%), -62px 18px 100px rgb(0 0 0 / 55%);
     -webkit-transition: 1s linear;
-    transition: 1s linear;
+    transition: 1s linear, background-color 2s;
     z-index: -1;
 }
 
@@ -546,6 +547,7 @@ body{
     transition: all 0.2s linear;
     background: #EFE83A;
 }
+
 .card:hover::before, .card:hover::after{
     width: 100%;
 }
@@ -636,11 +638,7 @@ body{
     color: #0D0D0D;
 }
 
-
 @media only screen and(min-width: 768px) {
-
-    /*SPINNER*/
-
     .contenedor-carga {
         height: 100%;
         width: 100%;
@@ -671,7 +669,6 @@ body{
         animation: spin 3s infinite ease-out;
         z-index: 2;
     }
-
     .contenedor-carga .porcentaje {
     position: absolute;
     top: 50%; left: 50%;
@@ -687,7 +684,7 @@ body{
     100% { transform: translate(-50%, -50%) rotate(360deg)}
     } 
 
-    /*--------HEADER----------*/  
+    /*------------------*/  
     
 
     header{
@@ -704,7 +701,7 @@ body{
         height: 2.5rem;
     }
 
-    /* -------FOOTER--------- */
+    /* ---------------- */
     
     footer{
     width: 100%;
@@ -767,11 +764,11 @@ body{
     font-size: var(--font-size-s);
     }
     
-    /* -------BODY HOME --------- */
+    /* ---------------- */
     
-    /* body .index{
+    body .index{
         background-color: #0D0D0D;
-    } */
+    }
 
     /*Scroll bar style*/
     
@@ -1091,8 +1088,7 @@ body{
     color: #0D0D0D;
     }
 
-    
-    /* -------JUEGO LANZAMIENTO--------- */
+        /* -------JUEGO LANZAMIENTO--------- */
 
     .portada-novedades{
         background-image: url(/img/portada-novedades.jpg);
@@ -1692,5 +1688,6 @@ body{
     #menu span{
         background: transparent;
     }
+
 
 }
