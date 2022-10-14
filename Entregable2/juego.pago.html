@@ -103,13 +103,48 @@
                         </button>
                     </div>
 
-                    <div class="frame" >
-                        <button class="btn-jugar gratis">
-                            <a href="">Jugar</a>
-                            <img src="./img/play.png" alt="btn-play">
+                    <div class="frame-pago" >
+                        <button id="open" class="btn-jugar pago">
+                            <img src="./img/comprar-juego.png" alt="btn-pay">
+                            <a href="">Comprar por $500</a>
+
                         </button>
                     </div>
+                    <div id="mask" class="hidden"></div>
+                    <section id="modal" class="hidden">
+                        <div class="modal-content"> 
+
+                            <img  class="modal-img-nocomprado" src="./img/comprar-juego.png">
+
+                            <img id="close" class="modal-clear" src="./img/Clear.png">
+                            <h1>4 en linea - Pirate Hunter</h1>
+
+                            <p class="comprar">Comprar por $500</p>
+
+                            <a class="modificar-datos" href="#">Modificar mis datos antes de comprar</a>
+                        
+                            <div class= "buttons">
+                                <button id="btn-comprar" class="btn-comprar">Comprar</button>
+                                
+                                <button class="btn-cancelar" id="close">Cancelar</button>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <div id="mask-comprado" class="hidden-comprado"></div>
+                    <section id="modal-comprado" class="hidden-comprado">
+                        <img  class="juego-comprado" src="./img/juego-comprado.png">
+    
+                        <img id="close-comprado" class="modal-comprado-clear" src="./img/Clear.png">
+    
+                        <h1><span>Felicitaciones!! </span><br> Ya podes jugar 4 en linea - Pirate Hunter cuando quieras.</h1>
+    
+                   
+                    </section>
+
                 </section>
+
 
                 <section class="instrucciones">
                     <h2>Participá en la Batalla</h2>
@@ -395,8 +430,13 @@
             </div>
         </footer>
 
+        <div class="modal">
+            
+
+        </div>
+
     
-    <!-- <script src="./js/slider.js"></script> -->
     <script src="./js/loading.js"></script>
+    <script src="./js/comprar.js"></script>
 </body>
 </html>

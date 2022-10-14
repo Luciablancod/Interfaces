@@ -1,8 +1,22 @@
-"Use strict";
+"use strict";
 
-$(function() {
-    $('.btn-scroll-down').click (function() {
-      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
-      return false;
-    });
-  });
+document.addEventListener("DOMContentLoaded", () => {
+
+  let btnScroll = document.getElementById('btn-scroll');
+  let bodyContainer = document.getElementById('container');
+
+
+  console.log(btnScroll);
+  btnScroll.addEventListener('click', function()  {
+    console.log("hola nuevamente");
+
+      btnScroll.animate({
+          scrollTop: bodyContainer.offset().top},
+          'slow');
+
+    
+  })
+
+  
+
+})

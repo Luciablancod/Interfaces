@@ -13,14 +13,14 @@
 
 <body class="novedades">
 
-    <div id="contenedor-carga" class="contenedor-carga">
+    <!-- <div id="contenedor-carga" class="contenedor-carga">
         <div id="carga" class="carga">
         </div>
         
         <div class="porcentaje">
         <p id="porcentaje-carga">0%</p>
         </div>
-    </div>
+    </div> -->
 
     <header>
         <div class="logo">
@@ -84,16 +84,41 @@
 
                 <!-- <a href="./novedades.html" class="btn-scroll-down" > -->
 
-                <button class="btn-suscribite" ><a href=""  >Suscribite</a></button>
+                <button id="open" class="btn-suscribite" ><a id="open"  >Suscribite</a></button>
+
+
+                <div id="mask" class="hidden"></div>
+                <section id="modal" class="hidden">
+                    <div class="modal-content"> 
+                        <img id="close" class="modal-clear" src="./img/Clear.png">
+                        <h1>Suscribite ahora!</h1>
+
+                        <p>Se el primero en enterarte de las novedades del nuevo juego Farm City</p>
+
+                        <form class="suscripcion">
+                            <input placeholder="Ingresa tu e-mail" type="text">
+
+                            <button id="open-suscripto-ok" class="btn-comprar">Suscribirse</button>
+                            <button class="btn-cancelar" id="close">Cancelar</button>
+                        </form>
+                    </div>
+                </section>
+
+                <div id="mask-exito" class="hidden-exito"></div>
+                <section id="modal-exito" class="hidden-exito">
+
+                    <img id="close-exito" class="modal-exito-clear" src="./img/Clear.png">
+
+                        <h1><span>Ya estas suscripto! </span><br> Pronto recibiras más Información.</h1>
+
+               
+                </section>
 
                 <div class="notificacion">
                     <h2>Y recibí la notificación cuando se estrene antes que nadie</h2>
                 </div>
 
-
-                <div class="suscripcion">
-
-                </div>
+                <div class="suscripcion"></div>
             </div>
         </div>
     </section>
@@ -234,6 +259,8 @@
         </div>
     </footer>
     
+
+    <script src="./js/suscripto.js"></script>
     <script src="./js/loading.js"></script>
     <script src="./js/slider.js"></script>
 </body>
