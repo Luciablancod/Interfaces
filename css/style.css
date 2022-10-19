@@ -353,7 +353,7 @@ font-size: 10px;
 
 .portada-home{
 
-    background-image: url(/img/portada-home.jpg);
+    background-image: url(../img/portada-home.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
