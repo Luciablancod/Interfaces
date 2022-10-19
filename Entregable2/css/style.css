@@ -353,14 +353,14 @@ font-size: 10px;
 
 .portada-home{
 
-    background-image: url(/img/portada-home.jpg);
+    background-image: url(/Entregable2/img/portada-home.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
     height: 15rem;
     box-shadow: inset 1px -42px 32px 17px rgb(0 0 0 / 60%), -62px 18px 100px rgb(0 0 0 / 55%);
     -webkit-transition: 1s linear;
-    transition: 1s linear;
+    transition: 1s linear, background-color 2s;
     z-index: -1;
 }
 
@@ -1462,7 +1462,7 @@ transform: rotateY(180deg);
 /* -------JUEGO LANZAMIENTO--------- */
 
 .portada-novedades{
-    background-image: url(/img/portada-novedades.jpg);
+    background-image: url(/Entregable2/img/portada-novedades.jpg);
     background-position: top;
     background-size:cover;
     height: 35rem;
@@ -1501,7 +1501,7 @@ transform: rotateY(180deg);
 }
 
 .suscripcion{
-    background-image: url(/img/nube-1.png);
+    background-image: url(/Entregable2/img/nube-1.png);
     z-index: 4;
     height: 60rem;
     background-position: center;
@@ -1680,7 +1680,7 @@ text-shadow: 1px 1px 1px rgba(54,63,145, 0.4);
 
 .lomas-bg{
 
-    background-image: url(/img/lomas.png);
+    background-image: url(/Entregable2/img/lomas.png);
     z-index: -12;
     height: 30rem;
     width: 100%;
